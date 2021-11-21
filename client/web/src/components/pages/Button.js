@@ -22,9 +22,9 @@ export const Button = ({
         //Checks if the buttons are valid
         const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
-        const checkButtonSize = SIZES.include(buttonSize) ? buttonSize : SIZES[0];
+        const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-        const checkButtonColor = COLOR.include(buttonColor) ? buttonColor : COLOR[0];
+        const checkButtonColor = COLOR.includes(buttonColor) ? buttonColor : COLOR[0];
 
         return (
             <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} onClick={onClick}
