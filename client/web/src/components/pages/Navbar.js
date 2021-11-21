@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaBars, FaTimes }
+import { FaBars, FaTimes } from 'react-icons/fa' 
 
 export default function Navbar() {
     return (
