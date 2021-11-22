@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MdFingerprint } from 'react-icons/md';
+import { ReactComponent as MySVG } from '../pages/FCLogo.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
 import './Navbar.css';
@@ -11,7 +11,7 @@ export default function Navbar() {
     const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false)
+    //const closeMobileMenu = () => setClick(false)
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
@@ -25,10 +25,10 @@ export default function Navbar() {
 
     return (
         <>
-            <div classname="navbar" /*This is the entire navbar element*/>
+            <div className="navbar" /*This is the entire navbar element*/>
                 <div className="navbar-container container">
-                    <Link to='/' classname="navbar-logo">
-                        <MdFingerprint to='/' className = 'navbar-icon' />
+                    <Link to='/' className='navbar-logo'>
+                        <MySVG to='/' className = 'navbar-icon' />
                         FIDEICOMMISSUM
                     </Link>
                     <div className ="menu-icon" onClick={handleClick} />

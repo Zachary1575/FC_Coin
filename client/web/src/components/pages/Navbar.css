@@ -1,15 +1,15 @@
 .navbar {
-    background: #1c2237;
+    background-color: #1c2237;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     position: sticky;
     top: 0;
     z-index: 999;
   }
-  
+ 
   .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -19,11 +19,10 @@
   .container {
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
   
   .navbar-logo {
@@ -46,7 +45,7 @@
     justify-content: center;
     list-style: none;
     text-align: center;
-    justify-content: end;
+    justify-content: flex-end;
   }
   
   .nav-item {
@@ -151,3 +150,4 @@
       height: 120px;
     }
   }
+  
