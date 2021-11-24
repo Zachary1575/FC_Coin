@@ -29,7 +29,7 @@ export default function Navbar() {
                 <div className="navbar-container container">
                     <Link to='/' className='navbar-logo'>
                         <MySVG to='/' className = 'navbar-icon' />
-                        FIDEICOMMISSUM
+                        <p className='Title' id='title'>FIDEICOMMISSUM</p>
                     </Link>
                     <div className ="menu-icon" onClick={handleClick} />
                     {click ? <FaTimes /> : <FaBars />}

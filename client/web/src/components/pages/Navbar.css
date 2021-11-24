@@ -141,6 +141,14 @@
       color: #fff;
       font-size: 2rem;
     }
+
+    .Title {
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+
+    #title {
+      font-family: 'Times New Roman', Times, serif !important;
+    }
   
     .nav-btn {
       display: flex;
