@@ -23,7 +23,7 @@ export default function Navbar() {
     };
 
     const title = {
-        fontFamily: 'Times new Roman'
+        fontFamily: 'Montserrat'
     }
 
     //Only renders the button one time

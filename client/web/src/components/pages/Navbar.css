@@ -4,16 +4,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 100;
   }
  
   .navbar-container {
     display: flex;
     /*justify-content: space-between;*/
     height: 60px;
+    padding-right: 25px;
+    padding-left: 200px;
   }
   
   .container {
@@ -21,8 +23,6 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 25px;
-    padding-left: 200px;
   }
   
   .navbar-logo {
@@ -93,7 +93,7 @@
     }
   
     .nav-menu.active {
-      background: #1c2237;
+      background: rgb(36, 40, 47);
       left: 0;
       opacity: 1;
       transition: all 0.6s ease;
