@@ -68,7 +68,7 @@ export default function Navbar() {
                         
                     </ul>
                     
-                    <ul className='nav-second-menu'>
+                    <ul className={click ? 'nav-menu active' : 'nav-second-menu'}>
                         <li className="nav-btn">
                             {button ? (
                                 <Link to="/sign-up" className= "btn-link">
