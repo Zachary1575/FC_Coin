@@ -66,6 +66,9 @@ export default function Navbar() {
                             </Link>
                         </li>
                         
+                    </ul>
+                    
+                    <ul className='nav-second-menu'>
                         <li className="nav-btn">
                             {button ? (
                                 <Link to="/sign-up" className= "btn-link">
@@ -78,6 +81,25 @@ export default function Navbar() {
                             )}
 
                         </li>
+
+                        <li className='nav-item-2'>
+                            <Link to='/About' className='nav-links'>
+                                v.1.0.2
+                            </Link>
+                        </li>
+                        <li className='nav-item-2'>
+                            <Link to='/About' className='nav-links'>
+                                Languages
+                            </Link>
+                        </li>
+
+                        <li className='nav-item-2'>
+                            <Link to='/About' className='nav-links'>
+                                Github
+                            </Link>
+                        </li>
+                        
+
                     </ul>
                 </div>
             </div>

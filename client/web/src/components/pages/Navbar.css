@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 .navbar {
     background-color: #20232a;
     height: 60px;
@@ -30,7 +32,7 @@
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
   }
@@ -48,13 +50,36 @@
     justify-content: flex-end;
     margin-left: 150px;
   }
+
+  .nav-second-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: flex-end;
+    margin-left: 250px;
+  }
   
   .nav-item {
     height: 60px;
+    font-size: 16px;
     border-bottom: 2px solid transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .nav-item-2 {
+    height: 60px;
+    font-size: 13px;
+    border-bottom: 2px solid transparent;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   
   .nav-item:hover {
+    border-bottom: 2px solid #f00946;
+  }
+
+  .nav-item-2:hover {
     border-bottom: 2px solid #f00946;
   }
   
