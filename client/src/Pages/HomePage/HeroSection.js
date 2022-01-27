@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './Button';
+import { Button } from '../../Components/Button';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import Typewriter from 'typewriter-effect';

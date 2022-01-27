@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as MySVG } from '../Assets/FCLogo.svg';
+import { ReactComponent as MySVG } from '../../Assets/FCLogo.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Button } from './Button';
+import { Button } from '../../Components/Button';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
 

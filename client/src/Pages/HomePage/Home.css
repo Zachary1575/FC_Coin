@@ -1,0 +1,10 @@
+.HR-Box{
+    display: flex;
+    justify-content: center;
+}
+
+.ThemeBreak {
+    border-bottom: 1px solid #ececec;
+    width: 50%;
+    margin-top: 40px;
+}
