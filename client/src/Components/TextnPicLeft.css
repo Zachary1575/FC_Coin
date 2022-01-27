@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+.TextnPICl_Container {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 40px;
+}
+.TextnPICl_IMG {
+    width: 40%;
+    height: auto;
+    float:right;
+}
+
+.Inner {
+    display: table;
+    align-items: center;
+    float: left;
+    margin-left: 25px;
+    width: 50%;
+}
+
+.TextnPICl_TITLE {
+    color: #282c34;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: top;
+}
+
+.TextnPICl_DESC {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: black;
+}
