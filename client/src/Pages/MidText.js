@@ -26,6 +26,8 @@ function MidText() {
                     </li>
                 </ul>
             </div>
+
+            
         </>
     )
 }
