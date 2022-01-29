@@ -1,4 +1,4 @@
-//Functional Components
+//Functional Component
 import React from 'react';
 import './IntroText.css';
 

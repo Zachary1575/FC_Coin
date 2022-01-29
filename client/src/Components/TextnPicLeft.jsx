@@ -11,20 +11,23 @@ class TextnPicLeft extends Component {
       title: this.props.title,
       desc: this.props.desc,
       buttonPresence: this.props.buttonPresence,
-    buttondesc: this.props.buttondesc
+      buttondesc: this.props.buttondesc,
+      buttonLink:this.props.buttonLink
     }
   
     render() {
+
+      const { imgSrc, altSrc , title, desc, buttonPresence, buttondesc, buttonLink } = this.state;
   
       return(
         <React.Fragment>
           <div className='TextnPICl_Container'>
             <div className='Inner'>
-              <h1 className='TextnPICl_TITLE'>{this.state.title}</h1>
-              <p className='TextnPICl_DESC'>{this.state.desc}</p>
-              {(this.state.buttonPresence) ? <div className='btn_TextnPic'><Link to="/sign-up"><Button buttonSize='btn--wide' buttonColor='primary'>{this.state.buttondesc}</Button></Link></div> : <div/>}
+              <h1 className='TextnPICl_TITLE'>{title}</h1>
+              <p className='TextnPICl_DESC'>{desc}</p>
+              {(buttonPresence) ? <div className='btn_TextnPic'><Link to={buttonLink}><Button buttonSize='btn--wide' buttonColor='primary'>{buttondesc}</Button></Link></div> : <div/>}
             </div>
-            <img src ={this.state.imgSrc} alt={this.state.altSrc} className='TextnPICl_IMG'></img>
+            <img src ={imgSrc} alt={altSrc} className='TextnPICl_IMG'></img>
           </div>
           
         </React.Fragment>

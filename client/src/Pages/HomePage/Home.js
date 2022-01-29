@@ -18,7 +18,8 @@ class Home extends Component {
                 imgSrc:'images/blogging.svg', 
                 title: 'A Loving Community', 
                 altSrc: 'IMAGE COULD NOT BE LOADED!', 
-                desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                desc:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
                 buttondesc:'Join us!',
                 buttonLink:'/community'
             },
@@ -29,7 +30,8 @@ class Home extends Component {
                 imgSrc:'images/chatbot.svg', 
                 title: 'Lightweight and Functional', 
                 altSrc: 'IMAGE COULD NOT BE LOADED!', 
-                desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                desc:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
                 buttondesc:'Learn more!',
                 buttonLink:'/about'
             },
@@ -40,7 +42,8 @@ class Home extends Component {
                 imgSrc:'images/2.svg', 
                 title: 'Easy to use UI', 
                 altSrc: 'IMAGE COULD NOT BE LOADED!',
-                desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                desc:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
                 buttondesc:'',
                 buttonLink:''
             }
@@ -65,8 +68,8 @@ class Home extends Component {
                 : <PicTextL key={TextBody.id} buttonPresence={TextBody.buttonPresence} buttondesc={TextBody.buttondesc} buttonLink={TextBody.buttonLink} imgSrc={TextBody.imgSrc} title={TextBody.title} altSrc={TextBody.altSrc} desc={TextBody.desc} />)}
             </div>
 
-            <div id="rectangle"></div>
-                    
+            <div style={{width: "1900px", height: "100px", background: "#20232a", marginTop: "50px"}}></div>
+            
             </>
         );
     }
