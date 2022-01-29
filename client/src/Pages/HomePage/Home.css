@@ -9,3 +9,9 @@
     width: 50%;
     margin-top: 40px;
 }
+
+#rectangle{
+    width:1900px;
+    height:100px;
+    background:#20232a;
+}

@@ -36,3 +36,10 @@
     font-size: 18px;
     color: black;
 }
+
+.btn_TextnPic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}

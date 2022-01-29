@@ -12,9 +12,38 @@ class Home extends Component {
     //Render the Text Component For Right Or Left
     state = {
         Order:[
-            {picSideR: true, id: 1, imgSrc:'images/blogging.svg', title: 'A Loving Community', altSrc: 'IMAGE COULD NOT BE LOADED!', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-            {picSideR: false, id: 2, imgSrc:'images/chatbot.svg', title: 'Lightweight and Functional', altSrc: 'IMAGE COULD NOT BE LOADED!', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-            {picSideR: true,id: 3, imgSrc:'images/2.svg', title: 'Easy to use UI', altSrc: 'IMAGE COULD NOT BE LOADED!', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+            {   picSideR: true, 
+                buttonPresence: true,
+                id: 1, 
+                imgSrc:'images/blogging.svg', 
+                title: 'A Loving Community', 
+                altSrc: 'IMAGE COULD NOT BE LOADED!', 
+                desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                buttondesc:'Join us!',
+                buttonLink:'/community'
+            },
+
+            {   picSideR: false,
+                buttonPresence: true, 
+                id: 2, 
+                imgSrc:'images/chatbot.svg', 
+                title: 'Lightweight and Functional', 
+                altSrc: 'IMAGE COULD NOT BE LOADED!', 
+                desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                buttondesc:'Learn more!',
+                buttonLink:'/about'
+            },
+                
+            {   picSideR: true,
+                buttonPresence: false,
+                id: 3, 
+                imgSrc:'images/2.svg', 
+                title: 'Easy to use UI', 
+                altSrc: 'IMAGE COULD NOT BE LOADED!',
+                desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                buttondesc:'',
+                buttonLink:''
+            }
         ]
     }
 
@@ -32,10 +61,12 @@ class Home extends Component {
 
             <div>
                 {this.state.Order.map(TextBody => (TextBody.picSideR) 
-                ? <PicTextR key={TextBody.id} imgSrc={TextBody.imgSrc} title={TextBody.title} altSrc={TextBody.altSrc} desc={TextBody.desc} /> 
-                : <PicTextL key={TextBody.id} imgSrc={TextBody.imgSrc} title={TextBody.title} altSrc={TextBody.altSrc} desc={TextBody.desc} />)}
+                ? <PicTextR key={TextBody.id} buttonPresence={TextBody.buttonPresence} buttondesc={TextBody.buttondesc} buttonLink={TextBody.buttonLink} imgSrc={TextBody.imgSrc} title={TextBody.title} altSrc={TextBody.altSrc} desc={TextBody.desc} /> 
+                : <PicTextL key={TextBody.id} buttonPresence={TextBody.buttonPresence} buttondesc={TextBody.buttondesc} buttonLink={TextBody.buttonLink} imgSrc={TextBody.imgSrc} title={TextBody.title} altSrc={TextBody.altSrc} desc={TextBody.desc} />)}
             </div>
-        
+
+            <div id="rectangle"></div>
+                    
             </>
         );
     }

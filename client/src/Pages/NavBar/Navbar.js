@@ -49,19 +49,19 @@ export default function Navbar() {
                     
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                            <Link to='/About' className='nav-links'>
+                            <Link to='/community' className='nav-links'>
                                 Community
                             </Link>
                         </li>
 
                         <li className='nav-item'>
-                            <Link to='/About' className='nav-links'>
+                            <Link to='/about' className='nav-links'>
                                 About
                             </Link>
                         </li>
 
                         <li className='nav-item'>
-                            <Link to='/ContactUs' className='nav-links'>
+                            <Link to='/contactUs' className='nav-links'>
                                 Contact Us
                             </Link>
                         </li>
@@ -83,12 +83,12 @@ export default function Navbar() {
                         </li>
 
                         <li className='nav-item-2'>
-                            <Link to='/About' className='nav-links'>
+                            <Link to='/versions' className='nav-links'>
                                 v.1.0.2
                             </Link>
                         </li>
                         <li className='nav-item-2'>
-                            <Link to='/About' className='nav-links'>
+                            <Link to='/languages' className='nav-links'>
                                 Languages
                             </Link>
                         </li>
