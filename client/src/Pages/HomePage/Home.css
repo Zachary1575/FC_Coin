@@ -9,3 +9,8 @@
     width: 50%;
     margin-top: 40px;
 }
+
+.Graph-Container {
+    display: table;
+    
+}

@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import HeroSection from './HeroSection';
+import Footer from './Footer/Footer'
 import MidText from './MidText';
 import PicTextR from '../../Components/TextnPicRight';
 import PicTextL from '../../Components/TextnPicLeft';
 import './Home.css';
 import { homeObjOne } from './Data';
+import { LineChart, Line } from 'recharts';
+
+
 
 
 
@@ -53,22 +57,28 @@ class Home extends Component {
 
     render(){
 
+        const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}];
+
         return (
             <>
             <HeroSection {...homeObjOne} />
             <MidText />
 
-            <div className='HR-Box'>
-                <hr className="ThemeBreak"></hr>
-            </div>
+            <div className='HR-Box'><hr className="ThemeBreak"></hr></div>
 
             <div>
                 {this.state.Order.map(TextBody => (TextBody.picSideR) 
                 ? <PicTextR key={TextBody.id} buttonPresence={TextBody.buttonPresence} buttondesc={TextBody.buttondesc} buttonLink={TextBody.buttonLink} imgSrc={TextBody.imgSrc} title={TextBody.title} altSrc={TextBody.altSrc} desc={TextBody.desc} /> 
                 : <PicTextL key={TextBody.id} buttonPresence={TextBody.buttonPresence} buttondesc={TextBody.buttondesc} buttonLink={TextBody.buttonLink} imgSrc={TextBody.imgSrc} title={TextBody.title} altSrc={TextBody.altSrc} desc={TextBody.desc} />)}
             </div>
+            
+            <div className='HR-Box'><hr className="ThemeBreak"></hr></div>
 
-            <div style={{width: "1900px", height: "100px", background: "#20232a", marginTop: "50px"}}></div>
+            <div className='Graph-Container'>
+
+            </div>
+            
+            <Footer />
             
             </>
         );
