@@ -2,19 +2,112 @@
     width:100%; 
     background-color:#263238; 
     min-height:250px; 
-    padding:10px 0px 25px 0px ;
+    padding:10px 0px 20px 0px;
 
 }
 
 
 .footer-container {
-    max-width: 750px;
+    max-width: 1250px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
+    border-bottom: 1px solid #323f45;
+    padding-bottom: 30px;
 }
 
 .footer-box1 {
     display: flex;
     flex-direction: column;
+    max-width: 150px;
+    margin-left: auto;
+}
+
+.footer-box2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.footer-box3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    margin-right: auto;
+}
+
+.footer_txt {
+    color: #CCC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.footer_h {
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.header {
+    padding-bottom: 20px;
+}
+
+.Quick_Links {
+    list-style: none;
+}
+
+.link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #CCC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.End{
+    background-color:#263238;   
+}
+
+.footer_end{
+    display: table;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#263238; 
+}
+.footer_link_end {
+    list-style: none;
+}
+
+.footer_end_li {
+    display: inline;
+    margin: 0 12px;
+    color: #999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer_end_text{
+    text-align: center !important;
+    margin-top: 20px;
+    color: #CCC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.footer_socials_end {
+    list-style: none;
+    text-align: center !important;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer_end_s {
+    display: inline;
+    margin: 0 12px;
+    color: #999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
