@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Intro from '../../Components/IntroText';
 import Mid from '../../Components/HeaderText';
+import Footer from '../HomePage/Footer/Footer';
 
 class about extends Component {
     state = {
@@ -94,6 +95,9 @@ class about extends Component {
 
 
                 <div style={{width: "1900px", height: "100px", background: "#20232a", marginTop: "50px"}}></div>
+
+                <Footer />
+
             </React.Fragment>
         );
     }

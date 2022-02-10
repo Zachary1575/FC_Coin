@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
+import footerImage from '../../../Assets/Footer_img.png'
 
 class footer extends Component {
     state = {  } 
@@ -9,6 +10,10 @@ class footer extends Component {
                 <div>
                     <footer className='footer'>
                         <div className='footer-container'>
+
+                            <div>
+                                <img style={{height: "75%", marginLeft: "50px"}} src={footerImage} alt='CANNOT BE LOADED!'></img>
+                            </div>
 
                             <div className='footer-box1'>
                                 <div className='header'>

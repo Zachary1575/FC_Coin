@@ -6,7 +6,7 @@ import PicTextR from '../../Components/TextnPicRight';
 import PicTextL from '../../Components/TextnPicLeft';
 import './Home.css';
 import { homeObjOne } from './Data';
-import { LineChart, Line } from 'recharts';
+import Graph from '../../Components/Graph';
 
 
 
@@ -51,13 +51,21 @@ class Home extends Component {
                 buttondesc:'',
                 buttonLink:''
             }
+        ],
+
+        graph_Order:[
+            {   id: 1, 
+                graph_width_perc: "70%",
+                graph_aspect: 3,
+                
+            
+            }
         ]
     }
 
 
     render(){
-
-        const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}];
+        
 
         return (
             <>
@@ -75,11 +83,30 @@ class Home extends Component {
             <div className='HR-Box'><hr className="ThemeBreak"></hr></div>
 
             <div className='Graph-Container'>
+                <h1 className='Graph_Header'>Bitcoin(BTC)</h1>
+                <Graph />   
 
+                <h1 className='Graph_Header'>Ethereum(ETH)</h1>
+                <Graph />  
+
+                <h1 className='Graph_Header'>DogeCoin(DOGE)</h1>
+                <Graph />  
+
+            </div>
+
+            <div className='HR-Box'><hr className="ThemeBreak"></hr></div>
+
+            <div className='Our-Statistics'>
+
+                <h1 className='Graph_Header'>Our Statistics</h1>
+
+                <div className='Our'>
+                    <Graph /> 
+                </div>
             </div>
             
             <Footer />
-            
+
             </>
         );
     }
