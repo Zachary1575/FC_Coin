@@ -6,7 +6,7 @@ var config = {
         user: 'root',
         password: 'root',
         database: "fc_users",
-        port: 5000,
+        port: 7000,
     },
 
     //Production build coming...

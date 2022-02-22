@@ -18,12 +18,12 @@ const cors = require('cors');
 const mysql = require('mysql2');
 
 //Define our database for Auth and CRUD operations
-const db = {
+const db = mysql.createPool({
     host: config.host,
     user: config.user,
     password: config.password,
     database: config.database
-}
+});
 
 //Main Program, GET, POST, Query etc. (We are using http protocal due to localhost, https (with SSL) support will come soon...)
 
@@ -38,9 +38,12 @@ app.listen(port,() => {
 
 });
 
+//Do something with our server, like sending through the route, whenever someone accesses this route
+app.get('/', (req, res) => {
+    res.send("Hello World!");
+});
+
 //Routes and DB Queries
-
-
 
 //Register Account
 app.post("/server/insert", (req, res)=> {
@@ -55,14 +58,11 @@ app.post("/server/insert", (req, res)=> {
 
     //Query and inserts, err is to catch an error to console.log, result tries to get whatever we are trying to query
     db.query(sqlInsert, [username, email, password], (err,result) => {
-        console.log("Query is sent!");
-
-        if (result == null){
-            console.log(result);
-            console.log("Success!");
-        } else {
-            console.log(err);
-        }
+        res.send("Query Sent!")
+        console.log(err);
+        console.log(result);
+            
+        
         
     })
 })
