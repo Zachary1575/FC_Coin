@@ -15,9 +15,10 @@ class signup extends Component {
                 <div>
                     <h1>Sign Up</h1>
                         <Formik initialValues={{username: '', email: '', password: '',}}
-
+                            
+                            //Axios Post request to send info to database
                             onSubmit={async (values) => {
-                            Axios.post('http://localhost:7000/server/insert', {username: this.values.username, email: this.values.email, password: this.values.password})
+                            Axios.post('http://localhost:7000/server/insert', {username: values.username, email: values.email, password: values.password})
                             .then(() => {alert("Queried Successfully!")}); }}>
 
                             <Form>
