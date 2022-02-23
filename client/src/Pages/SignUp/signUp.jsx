@@ -8,7 +8,6 @@ import Axios from 'axios';
 
 class signup extends Component {
 
-
     render() { 
         return (
             <React.Fragment>
@@ -18,7 +17,7 @@ class signup extends Component {
                             
                             //Axios Post request to send info to database
                             onSubmit={async (values) => {
-                            Axios.post('http://localhost:7000/server/insert', {username: values.username, email: values.email, password: values.password})
+                            Axios.post('http://localhost:7000/server/registration/signUp', {username: values.username, email: values.email, password: values.password})
                             .then(() => {alert("Queried Successfully!")}); }}>
 
                             <Form>

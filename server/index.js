@@ -45,8 +45,8 @@ app.get('/', (req, res) => {
 
 //Routes and DB Queries
 
-//Register Account
-app.post("/server/insert", (req, res)=> {
+//Register a Account
+app.post("/server/registration/signUp", (req, res)=> {
 
     //Insert information
     const username = req.body.username;
@@ -66,3 +66,18 @@ app.post("/server/insert", (req, res)=> {
         
     })
 })
+
+//Getting information of usernames, but encrypted
+app.get('/server/registration/get', (res, req)=> {
+    //Query Database to deliver information
+    const sqlSelect = `SELECT username FROM ${config.database}.user_auth`;
+    db.query(sqlSelect, (err, result) => {
+
+
+        console.log(result);
+        console.log(err);
+    });
+
+})
+
+
